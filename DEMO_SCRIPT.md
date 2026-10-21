@@ -1,44 +1,50 @@
 # Forgepath demo script
 
-## Two-minute story
+## Primary recording path (2–3 minutes)
 
-**Opening (0:00–0:12)**
+Use the default **Camera mounting bracket** request and **Northline Precision (fictional)**. Keep the synthetic-data notice and local simulation labels visible where possible. The whole buyer/supplier exchange takes place in one browser workspace.
 
-“American manufacturing capability is useful only when a buyer can discover it and establish the next step. Forgepath connects a part requirement to capability, evidence, and a person accountable for the decision. This demonstration uses fictional records throughout.”
+**Open with the requirement (0:00–0:20)**
 
-**Choose and compare (0:12–0:30)**
+“Forgepath takes a fictional component request through a named human approval and a simulated supplier response. This is a browser-local workflow: it sends no messages and creates no purchase commitment.”
 
-Select **Landing-gear clevis** in the drone component list or illustration. Show the process, material, drawing revision and required qualification. Point to the matching machining capabilities and 90/100 score, then the expired evidence holding the candidate back. Expand the comparison table if useful.
+Point to the bracket's process, material, tolerance, 100 pcs and requested date. Show Northline's required checks and evidence. The default sample records are ready for human review; the score is only a comparison aid.
 
-“The score explains the fit. Every required check still has to pass.”
+**Approve and create the draft (0:20–0:45)**
 
-**Resolve the obstacle (0:30–0:58)**
+In the supplier review panel, choose **Approve RFQ drafting**, enter a reviewer name and note, and record the decision. In the RFQ workflow section, choose **Create local RFQ draft**. Point to the RFQ ID, immutable local draft label, request revision and snapshot context.
 
-Inspect Red River Toolworks. Click **Request missing evidence**, use the default request or write a short request, and record it. Click **Review new evidence**, then **Load fictional renewal details**. Explain that this represents a reviewer examining a supplied packet, not an automated certificate verification. Record the review. Point to the expired record remaining in history, the renewed record and resolved follow-up.
+“This draft captures exactly what was approved. It is not an order or award.”
 
-**Human decision and packet (0:58–1:18)**
+**Record a fictional accept (0:45–1:15)**
 
-Click **Approve RFQ drafting**. Enter a reviewer name and note. Record the decision. Click **Prepare RFQ packet**, point to its requirement revision, comparison, evidence and named decision. Download the readable packet and JSON.
+Switch to **SIMULATED supplier** and choose **Record simulated response**. Keep the default accept and 100 pcs, and set delivery to **2026-11-25** (after the requested 2026-11-20). Enter a fictional actor and source reference, then record it. Point to the late-delivery exception.
 
-“The output is a draft review packet someone can carry into a supplier conversation. No supplier has been contacted or awarded work.”
+“The supplier response is a local claim with quantity, date or calendar lead time, actor and source reference. Forgepath flags a date later than the request for review.”
 
-**Add a profile and search naturally (1:18–1:47)**
+**Acknowledge, then show a changed response (1:15–1:50)**
 
-Click **Add my capabilities** → **Try a fictional paragraph** → **Preview extracted fields**. Point out a source excerpt, then edit a suggested field and confirm the fictional profile. Open **Find a manufacturer** and search “Aluminum CNC milling in Texas.” Show the interpreted filters and explanation, then edit or apply a constraint. If the result set is empty, use the explicit option to relax constraints.
+Switch to **SIMULATED buyer**, choose **Review latest response**, acknowledge the visible exception, enter the reviewer name and note, and record the review. Switch back to **SIMULATED supplier** and submit a second response version with a delivery date of **2026-11-18** and a note saying the fictional date changed. Return to the buyer role and point out that the latest response makes the previous named review stale and requires a fresh review.
 
-“The intake is a local deterministic suggestion, not a verified supplier claim. I can correct it before confirming. Buyer search shows its inferred filters and why profiles appear; qualification stays a separate review.”
+“The event history stays intact. A changed response version needs its own named review; acknowledgement still does not approve a purchase.”
 
-**Close (1:47–2:00)**
+**Show the portable record (1:50–2:15)**
 
-“If a drawing or qualification changes, earlier approvals become stale. The goal is a reusable capability record and a trustworthy next step, so domestic buyers can discover potential manufacturing capacity faster.”
+Choose **Readable workflow packet** and **Workflow packet JSON** to show both human-readable and structured records. If time permits, expand **Advanced · local JSON / CSV response exchange** and point out the versioned template and preview/import controls. Explain that correlation fields bind the response to the RFQ, line and request revision; do not claim a cross-device transfer was demonstrated unless it was verified separately.
 
-## Technical extension: stale approvals
+**Close (2:15–2:30)**
 
-After approving the clevis, edit its drawing revision from DEMO-A to DEMO-B and save. Show **Fresh review required** and the packet changing to **Review only — approval required**. The earlier decision remains in the log. Reapprove only after fresh human review.
+“The workflow keeps request approval, supplier response claims, exceptions and human review distinct. Qualification, engineering, price and commercial terms still need real-world review.”
+
+## Optional technical extension: qualification evidence and stale approval
+
+Select **Landing-gear clevis**. Inspect Red River Toolworks, whose fictional AS9100D evidence is expired. Click **Request missing evidence**, record a follow-up, then click **Review new evidence** and **Load fictional renewal details**. Record the review. Show the expired record remaining in history and the new synthetic evidence record. If all gates pass, record a named approval and create a local RFQ draft, then change the drawing revision from DEMO-A to DEMO-B and save. Show **Fresh review required** and the RFQ workflow retaining the old draft with stale approval visible.
+
+This extension demonstrates a separate evidence journey; it is longer than the primary response path.
 
 ## Recording procedure
 
-Use the hosted app or run it locally from the source bundle. Reset the workspace first. Set browser zoom to a readable size; keep the synthetic-data notice and URL visible briefly. Use the computer's supported screen recorder and capture one continuous take. Verify the resulting video plays end to end and that the exported packet opens. Keep a local recording and local app copy available on Demo Day. This workspace does not expose a supported continuous video recorder.
+Use the hosted app or run it locally from the source bundle. Reset the workspace first. Set browser zoom to a readable size; keep the synthetic-data notice and URL visible briefly. Use the computer's supported screen recorder and capture one continuous take. Verify the resulting video plays end to end and that each exported packet you plan to show opens. Keep a local recording and local app copy available on Demo Day. This workspace does not expose a supported continuous video recorder. Treat these as recording steps; report a recording or file-open result only after doing it.
 
 ## Demo Day checklist
 

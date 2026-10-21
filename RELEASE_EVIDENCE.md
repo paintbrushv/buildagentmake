@@ -1,5 +1,35 @@
 # Forgepath release evidence — October 21, 2026
 
+## Version 0.5.0 — MAT-12
+
+This release extends the approved RFQ path into a simulated supplier response, explicit exception handling, named buyer acknowledgement/hold and portable exchange records. MAT-13 discovery remains in place. MAT-14 measurement and MAT-15 pilot materials remain separate work.
+
+### Validation
+
+105 Node tests pass: 56 existing tests plus 49 RFQ workflow tests. JavaScript syntax checks pass. A separate read-only reviewer verified snapshot binding, historical request correlation, exact duplicate replay, atomic failed imports, integer bounds, response/review chronology and original qualification gates. Unsafe integer quantities and backdated reviews were fixed and retested before release.
+
+The browser retained the prior local 0.4.0 workspace and exercised:
+
+1. Create a local RFQ from the current named buyer approval. The draft captured the supplier, request revision, line ID and approval snapshot.
+2. Switch to the explicitly simulated supplier role; offer 100 pcs for November 25 against the requested November 20. The late-delivery exception is visible with source and actor.
+3. Acknowledge the response as a named buyer. The late exception stays visible and the UI states that acknowledgement authorizes no purchase.
+4. Submit a second response for November 18. The earlier review becomes stale while both responses and the earlier review remain in the timeline.
+5. Preview a versioned CSV response 3. No record is added before explicit import. Import adds one event; replaying the identical CSV previews and skips one duplicate without a fourth response.
+6. Reload: RFQ, responses, review and provenance remain.
+7. Change drawing DEMO-A to DEMO-B. Current request revision 2 is shown beside the RFQ snapshot at revision 1; draft approval is stale and a new RFQ remains blocked until fresh requirement approval.
+8. At a 390px iframe (375px content), use keyboard navigation to record a named hold. Stale RFQ approval and exceptions remain visible. A discovered layout overflow was fixed; document width and scroll width both measure 375px after the fix. Table overflow remains confined to its scroll container.
+9. Exercise the readable workflow and JSON export controls. Generate standalone HTML, JSON and CSV using the same functions; verify request/offer, retained late exception, named review and JSON round-trip.
+
+The browser checks are agent-driven, not an independent human or physical-device usability study. Browser-to-workspace download transfer is not verified. Actual file download/open on the presentation machine and timed baseline remain MAT-14. The generated packet bytes were validated directly.
+
+### Scope and data boundaries
+
+RFQ drafts are fixed snapshots in application logic. Browser storage and logs remain editable local state, not authenticated or tamper-proof records. Simulated supplier claims are unverified. The workflow sends no message, order, award or payment and makes no real delivery commitment. Use one active demo tab; concurrent browser-tab edits are not reconciled. JSON/CSV provides a validated local exchange format, not a deployed ERP integration.
+
+Public source: https://github.com/paintbrushv/buildagentmake
+Live app: https://forgepath-supplier-desk.txpaintbrush.chatgpt.site
+Video and authenticated Devpost submission remain MAT-11.
+
 ## Version 0.4.0 — MAT-13
 
 The release implements manufacturer intake and buyer discovery. Supplier-response workflows, a measured human usability baseline and a pilot ask remain separate Linear items (MAT-12, MAT-14 and MAT-15).
