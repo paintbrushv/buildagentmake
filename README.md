@@ -2,7 +2,7 @@
 
 A working Supplier Relationship Management demonstration for HackFW: MADE 2026. Forgepath turns a commercial drone component requirement into a supplier comparison, evidence follow-up, named human decision, and downloadable RFQ review packet. Its capability network demonstrates how a manufacturer can become discoverable immediately from a short capability card.
 
-**Release:** 0.3.0 · **Data:** synthetic only · **Storage:** this browser · **Runtime:** static HTML/CSS/JavaScript, no third-party packages, external APIs or credentials.
+**Release:** 0.4.0 · **Data:** synthetic only · **Storage:** this browser · **Runtime:** static HTML/CSS/JavaScript, no third-party packages, external APIs or credentials.
 
 ## Run from a clean checkout
 
@@ -26,8 +26,10 @@ The repository retains its existing Apache-2.0 license.
 
 See [DEMO_SCRIPT.md](DEMO_SCRIPT.md) for the two-minute recording script and a longer technical walkthrough.
 
-1. **A blocked part reaches a documented next step:** select the landing-gear clevis; inspect Red River's expired AS9100D fixture; request evidence; review a fictional renewal for the scope/site/date; approve RFQ drafting with a name and note; prepare and download HTML/JSON packets.
-2. **A manufacturer becomes discoverable immediately:** Add manufacturer → Load fictional profile → Create searchable profile. Search `5-axis`, `7075` or `Gainesville`. Its capabilities appear immediately; site and qualification evidence remain self-reported/pending until reviewed. Any process or material string can be entered; common aliases are normalized.
+1. **A buyer searches in plain language:** enter a need such as “Aluminum CNC milling in Texas.” Review the interpreted constraints and explanation, edit filters, and apply them. If nothing matches, broaden or clear constraints explicitly; the selected part requirement is unchanged.
+2. **A manufacturer adds a profile:** paste a paragraph, labeled card, or one-row CSV. Review each extracted value and source excerpt, correct fields, and confirm. Name, city and processes are required; other details stay unknown unless supplied. Profiles are fictional, local and self-reported.
+
+The existing component review, evidence follow-up, named decision and packet journey remains available. See [DEMO_SCRIPT.md](DEMO_SCRIPT.md) for a short walkthrough.
 
 ## Decision rules
 
@@ -41,17 +43,19 @@ Each decision binds to its exact requirement/capability/site/evidence snapshot. 
 
 ## Onboarding and data boundaries
 
-Quick discovery requires only a name, city and manufacturing process. Material, tolerance and capacity details improve matching. Unknown facts remain unknown. A capability-card parser reads labeled fields locally, and common process/material aliases normalize to comparable terms. No account or certificate is required for discovery in this demo.
+Quick discovery requires only a name, city and manufacturing process. Material, tolerance and capacity details improve matching. Unknown facts remain unknown. Intake uses conservative deterministic local parsing for paragraphs, labeled cards and a one-row CSV; extracted fields include source excerpts and remain editable before confirmation. Confirmed profiles retain source provenance and any manual corrections. No account or certificate is required for discovery in this demo.
 
-All supplied and entered demo records must be fictional. Profiles and reviews are stored in localStorage under `forgepath-readiness-v3`; they are not shared between visitors or devices. The activity log is useful for demonstration but is editable local state, not a tamper-proof audit system. Download/export your session before clearing browser data. An unavailable browser storage quota leaves an in-memory session and prompts export.
+Buyer search uses plain-language text to infer visible process, material and location filters. The filters are editable and the interface explains why each profile appears. Search covers recorded fictional profile claims only; it does not establish qualification, availability or commercial fit. A no-match result offers an explicit way to relax constraints.
+
+All supplied and entered demo records must be fictional. Profiles and reviews are stored in this browser; they are not shared between visitors or devices. The activity log is useful for demonstration but is editable local state, not a tamper-proof audit system. Intake is local and deterministic: no external AI, URL scraping, or PDF ingestion is used. A URL may be recorded as a reference, but the app does not fetch it. Download/export your session before clearing browser data. An unavailable browser storage quota leaves an in-memory session and prompts export. This is not a real shared supplier network.
 
 A future real manufacturer network needs shared persistence, authentication, access control, consent, document storage and real evidence verification. Do not put customer drawings, private capability information, actual supplier evidence or credentials into this public demonstration.
 
 ## Validation
 
-`npm test` covers 32 cases: individual gates, unknown values, scope/site/validity, follow-up resolution, preserved evidence history, named decisions, stale approvals, scoped component decisions, aliases, capability discovery, arbitrary processes, input validation and escaped packet content.
+Automated tests cover intake, buyer search and the existing supplier-review rules. See the test suite for current coverage.
 
-The running app was exercised through the browser: component selection; blocked approval; follow-up creation; renewal review; named approval; packet preview and both export controls; requirement revision invalidation; capability onboarding; search; and persistence after reload. See [RELEASE_EVIDENCE.md](RELEASE_EVIDENCE.md). Responsive layouts are implemented; narrow viewport interaction has not yet been independently verified.
+Browser validation status is recorded separately in [RELEASE_EVIDENCE.md](RELEASE_EVIDENCE.md); do not treat features described here as independently browser-validated unless that record confirms them.
 
 ## Public local context
 

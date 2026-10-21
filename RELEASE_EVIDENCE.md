@@ -1,6 +1,35 @@
 # Forgepath release evidence — October 21, 2026
 
-Version 0.3.0. This file records completed checks, not commercial adoption.
+## Version 0.4.0 — MAT-13
+
+The release implements manufacturer intake and buyer discovery. Supplier-response workflows, a measured human usability baseline and a pilot ask remain separate Linear items (MAT-12, MAT-14 and MAT-15).
+
+### Automated and independent review
+
+56 Node tests pass, including the 32 existing decision/scenario tests and 24 new intake/search regressions. JavaScript syntax checks pass. A separate read-only implementation reviewer verified the test run and reproduced fixes for negated or conflicting numeric claims, uncertain/historical capability statements, compact material aliases, editable search ambiguity and manufacturer-name collisions. Qualification and human-approval gates remain intact.
+
+### Browser validation
+
+Exercised the served app through the supported browser:
+
+- The previously failing sentence “Need a shop to make aluminum camera brackets” finds Northline and visibly explains the sample request's process/material assumptions. Search leaves the component requirement unchanged.
+- An impossible location gives zero results. Explicitly removing only that location restores the result while retaining process and material.
+- A new Cedar Fork paragraph fills reviewable fields with excerpts. Changing its city from Gainesville to Denton before confirmation records the original text and the human correction separately. The self-reported profile is immediately searchable and remains after reload.
+- A 390-pixel iframe (375-pixel content area with a scrollbar) exercised responsive layout and keyboard entry through name, city, arbitrary process, fictional-data confirmation and submit. Unknown country, tolerance and capacity remain unknown. Document width equals scroll width: no page-level horizontal overflow in that tested flow.
+- A new “Texas Turning (fictional)” profile in Austin with Laser cutting is found by exact name instead of interpreting the name as a Texas turning requirement. Focus and scrolling show the created profile.
+- Search, no-match, intake confirmation and saved review transitions focus a newly rendered visible target. The original human approval and packet preview flow still produces a current named approval after the changes.
+
+These are agent-driven browser checks, not an independent human usability study or physical mobile-device test. No task-time baseline, saved-hours claim or commercial adoption measurement has been established. Actual browser download transfer and a second person's clean run remain pending MAT-14; packet generator bytes and source package integrity have been validated separately.
+
+### Data boundaries and external steps
+
+All example records are fictional and visitor-local. Extraction is a conservative deterministic aid with human confirmation, not a general document-understanding or certificate-authentication service. It does not fetch URLs, parse PDFs, call external AI or create a shared supplier network. The original source and user corrections remain editable local state.
+
+Public source: https://github.com/paintbrushv/buildagentmake
+Live app: https://forgepath-supplier-desk.txpaintbrush.chatgpt.site
+Video and Devpost submission remain tracked in MAT-11.
+
+## Prior version 0.3.0 verification
 
 ## Automated verification
 

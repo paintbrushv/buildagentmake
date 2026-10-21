@@ -22,11 +22,11 @@ Click **Approve RFQ drafting**. Enter a reviewer name and note. Record the decis
 
 “The output is a draft review packet someone can carry into a supplier conversation. No supplier has been contacted or awarded work.”
 
-**Onboard and find (1:18–1:47)**
+**Add a profile and search naturally (1:18–1:47)**
 
-Click **Add manufacturer** → **Load fictional profile** → **Create searchable profile**. Show the new Lone Oak profile immediately found in search. Click **5-axis** to show other candidates, then search its city or name.
+Click **Add my capabilities** → **Try a fictional paragraph** → **Preview extracted fields**. Point out a source excerpt, then edit a suggested field and confirm the fictional profile. Open **Find a manufacturer** and search “Aluminum CNC milling in Texas.” Show the interpreted filters and explanation, then edit or apply a constraint. If the result set is empty, use the explicit option to relax constraints.
 
-“A manufacturer can enter its processes and materials without a lengthy setup. Discovery is immediate. Qualification follows as its own review.”
+“The intake is a local deterministic suggestion, not a verified supplier claim. I can correct it before confirming. Buyer search shows its inferred filters and why profiles appear; qualification stays a separate review.”
 
 **Close (1:47–2:00)**
 
