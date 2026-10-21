@@ -44,6 +44,8 @@ This extension demonstrates a separate evidence journey; it is longer than the p
 
 ## Recording procedure
 
+Optional proof point, after the main workflow: open footer **Validation & results**. Say “These are measured local software batches on fixed fictional fixtures, with raw samples and source hashes. The manual worksheet is ready; independent human timing is still pending.” Avoid presenting millisecond core latency as time saved by a buyer. Show **Export workspace** and **Restore workspace** preview if discussing repeatability; preserve an export before any reset. Follow `validation/HUMAN_TEST.md` for the separate human comparison and laptop checks.
+
 Use the hosted app or run it locally from the source bundle. Reset the workspace first. Set browser zoom to a readable size; keep the synthetic-data notice and URL visible briefly. Use the computer's supported screen recorder and capture one continuous take. Verify the resulting video plays end to end and that each exported packet you plan to show opens. Keep a local recording and local app copy available on Demo Day. This workspace does not expose a supported continuous video recorder. Treat these as recording steps; report a recording or file-open result only after doing it.
 
 ## Demo Day checklist

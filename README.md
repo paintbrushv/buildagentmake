@@ -2,7 +2,7 @@
 
 A browser-local Supplier Relationship Management demonstration for HackFW: MADE 2026. Forgepath connects a component requirement to supplier capability and evidence, then carries a human-approved RFQ draft through a simulated supplier response, exception review and versioned record.
 
-**Release:** 0.5.0 · **Data:** fictional only · **Storage:** this browser · **Runtime:** static HTML/CSS/JavaScript, no third-party packages, external APIs or credentials.
+**Release:** 0.6.0 · **Data:** fictional only · **Storage:** this browser · **Runtime:** static HTML/CSS/JavaScript, no third-party packages, external APIs or credentials.
 
 ## Run from a clean checkout
 
@@ -15,6 +15,8 @@ npm start
 ```
 
 Open http://127.0.0.1:4173. The app starts with four component requests and four fictional manufacturers. `Reset demo` restores those records. `Export workspace` saves the current dataset and activity log. The downloadable source bundle includes app modules, tests, documentation and build scripts. Source repository: https://github.com/paintbrushv/buildagentmake
+
+`Restore workspace` accepts a pasted workspace JSON export, validates the entire dataset and previews counts before explicit replacement. Only use fictional data. Invalid input leaves the current workspace intact. If a saved workspace is unreadable, Forgepath preserves the original bytes for download and pauses automatic saving until an explicit restore or reset. Storage failures keep a session in memory and show a persistent export warning. Keep an export before replacing records or clearing browser data.
 
 Live demo: https://forgepath-supplier-desk.txpaintbrush.chatgpt.site
 
@@ -50,7 +52,9 @@ A future real manufacturer network needs shared persistence, authentication, acc
 
 ## Validation
 
-Automated tests cover intake, buyer search, supplier-review rules and RFQ response workflow rules. Browser validation status is recorded separately in [RELEASE_EVIDENCE.md](RELEASE_EVIDENCE.md); do not treat features described here as independently browser-validated unless that record confirms them. In-app JSON/CSV download and paste/import controls describe the implemented local exchange path; verify actual file transfer in a browser before making claims about it.
+157 automated tests cover intake, buyer search, supplier review, RFQ response rules, workspace recovery and fixed benchmark correctness. Browser validation status is recorded separately in [RELEASE_EVIDENCE.md](RELEASE_EVIDENCE.md).
+
+The footer's **Validation & results** card links to reproducible core timings, raw results, a manual comparison workbook and the independent human test protocol. Run `npm run benchmark` to reproduce the software benchmark; it overwrites the recorded result and report with that machine's measurements. Core timings exclude browser interaction, network, file transfer and human work. Human trials are **n=0, pending**; no productivity or saved-hours claim follows from software latency. See [MEASUREMENT.md](validation/MEASUREMENT.md) and [HUMAN_TEST.md](validation/HUMAN_TEST.md). Verify actual packet file transfer and the offline fallback on the presentation laptop before Demo Day.
 
 ## Public local context
 

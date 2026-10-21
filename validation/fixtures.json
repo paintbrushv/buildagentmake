@@ -1,0 +1,453 @@
+{
+  "schemaVersion": 1,
+  "kind": "synthetic-fixed-fixtures",
+  "asOf": "2026-10-21",
+  "at": "2026-10-21T14:00:00Z",
+  "notice": "All names, capability claims, evidence, reviews and requests are fictional. No external retrieval.",
+  "reference": "Explicit expected answers transcribed independently from the four-row synthetic worksheet; software reference is not a human timing baseline.",
+  "reviewer": "Synthetic benchmark reviewer",
+  "reviewNote": "Synthetic fixture review; no real supplier approval.",
+  "supplierRows": [
+    {
+      "id": "SUP-DEMO-001",
+      "name": "Northline Precision (fictional)",
+      "city": "Gainesville",
+      "region": "Texas",
+      "country": "US",
+      "siteReviewed": true,
+      "siteSourceRef": "DEMO-SITE-SUP-DEMO-001",
+      "siteReviewer": "Demo quality reviewer",
+      "processes": [
+        "CNC milling",
+        "CNC turning"
+      ],
+      "materials": [
+        "Aluminum 6061"
+      ],
+      "maxToleranceInches": 0.0008,
+      "maxLotSize": 1200,
+      "iso9001Status": "verified",
+      "iso9001ValidFrom": "2026-01-01",
+      "iso9001ValidUntil": "2027-10-01",
+      "iso9001ScopeConfirmed": true,
+      "as9100Status": null,
+      "as9100ValidFrom": null,
+      "as9100ValidUntil": null,
+      "as9100ScopeConfirmed": false,
+      "qualificationReviewer": "Demo quality reviewer",
+      "siteId": "SITE-SUP-DEMO-001",
+      "siteReviewedAt": "2026-10-18T12:00:00Z",
+      "capabilitySourceId": "DEMO-CAP-SUP-DEMO-001",
+      "capabilitySourceLabel": "Synthetic supplier capability card",
+      "capabilitySourceObserved": "2026-10-18",
+      "iso9001SourceRef": "DEMO-CERT-SUP-DEMO-001-1",
+      "iso9001SiteId": "SITE-SUP-DEMO-001",
+      "iso9001ReviewedAt": "2026-10-18T12:00:00Z",
+      "iso9001VerifiedBy": "Demo quality reviewer",
+      "iso9001Observed": "2026-10-18",
+      "iso9001SourceLabel": "Synthetic certificate packet",
+      "iso9001Note": "Fictional qualification evidence. No real certificate attached.",
+      "as9100SourceRef": null,
+      "as9100SiteId": null,
+      "as9100ReviewedAt": null,
+      "as9100VerifiedBy": null,
+      "as9100Observed": null,
+      "as9100SourceLabel": null,
+      "as9100Note": null
+    },
+    {
+      "id": "SUP-DEMO-002",
+      "name": "Red River Toolworks (fictional)",
+      "city": "Muenster",
+      "region": "Texas",
+      "country": "US",
+      "siteReviewed": true,
+      "siteSourceRef": "DEMO-SITE-SUP-DEMO-002",
+      "siteReviewer": "Demo quality reviewer",
+      "processes": [
+        "CNC turning",
+        "5-axis milling"
+      ],
+      "materials": [
+        "Aluminum 6061",
+        "Aluminum 7075"
+      ],
+      "maxToleranceInches": 0.0005,
+      "maxLotSize": 2000,
+      "iso9001Status": "verified",
+      "iso9001ValidFrom": "2026-01-01",
+      "iso9001ValidUntil": "2027-10-01",
+      "iso9001ScopeConfirmed": true,
+      "as9100Status": "expired",
+      "as9100ValidFrom": "2026-01-01",
+      "as9100ValidUntil": "2026-10-01",
+      "as9100ScopeConfirmed": false,
+      "qualificationReviewer": "Demo quality reviewer",
+      "siteId": "SITE-SUP-DEMO-002",
+      "siteReviewedAt": "2026-10-18T12:00:00Z",
+      "capabilitySourceId": "DEMO-CAP-SUP-DEMO-002",
+      "capabilitySourceLabel": "Synthetic supplier capability card",
+      "capabilitySourceObserved": "2026-10-18",
+      "iso9001SourceRef": "DEMO-CERT-SUP-DEMO-002-1",
+      "iso9001SiteId": "SITE-SUP-DEMO-002",
+      "iso9001ReviewedAt": "2026-10-18T12:00:00Z",
+      "iso9001VerifiedBy": "Demo quality reviewer",
+      "iso9001Observed": "2026-10-18",
+      "iso9001SourceLabel": "Synthetic certificate packet",
+      "iso9001Note": "Fictional qualification evidence. No real certificate attached.",
+      "as9100SourceRef": "DEMO-CERT-SUP-DEMO-002-2",
+      "as9100SiteId": "SITE-SUP-DEMO-002",
+      "as9100ReviewedAt": "2026-10-18T12:00:00Z",
+      "as9100VerifiedBy": null,
+      "as9100Observed": "2026-10-18",
+      "as9100SourceLabel": "Synthetic certificate packet",
+      "as9100Note": "Fictional qualification evidence. No real certificate attached."
+    },
+    {
+      "id": "SUP-DEMO-003",
+      "name": "Texoma Polymer Works (fictional)",
+      "city": "Sherman",
+      "region": "Texas",
+      "country": "US",
+      "siteReviewed": true,
+      "siteSourceRef": "DEMO-SITE-SUP-DEMO-003",
+      "siteReviewer": "Demo quality reviewer",
+      "processes": [
+        "CNC milling"
+      ],
+      "materials": [
+        "Acetal"
+      ],
+      "maxToleranceInches": 0.002,
+      "maxLotSize": 500,
+      "iso9001Status": "verified",
+      "iso9001ValidFrom": "2026-01-01",
+      "iso9001ValidUntil": "2027-10-01",
+      "iso9001ScopeConfirmed": true,
+      "as9100Status": null,
+      "as9100ValidFrom": null,
+      "as9100ValidUntil": null,
+      "as9100ScopeConfirmed": false,
+      "qualificationReviewer": "Demo quality reviewer",
+      "siteId": "SITE-SUP-DEMO-003",
+      "siteReviewedAt": "2026-10-18T12:00:00Z",
+      "capabilitySourceId": "DEMO-CAP-SUP-DEMO-003",
+      "capabilitySourceLabel": "Synthetic supplier capability card",
+      "capabilitySourceObserved": "2026-10-18",
+      "iso9001SourceRef": "DEMO-CERT-SUP-DEMO-003-1",
+      "iso9001SiteId": "SITE-SUP-DEMO-003",
+      "iso9001ReviewedAt": "2026-10-18T12:00:00Z",
+      "iso9001VerifiedBy": "Demo quality reviewer",
+      "iso9001Observed": "2026-10-18",
+      "iso9001SourceLabel": "Synthetic certificate packet",
+      "iso9001Note": "Fictional qualification evidence. No real certificate attached.",
+      "as9100SourceRef": null,
+      "as9100SiteId": null,
+      "as9100ReviewedAt": null,
+      "as9100VerifiedBy": null,
+      "as9100Observed": null,
+      "as9100SourceLabel": null,
+      "as9100Note": null
+    },
+    {
+      "id": "SUP-DEMO-004",
+      "name": "Prairie Airframe Components (fictional)",
+      "city": "Denton",
+      "region": "Texas",
+      "country": "US",
+      "siteReviewed": true,
+      "siteSourceRef": "DEMO-SITE-SUP-DEMO-004",
+      "siteReviewer": "Demo quality reviewer",
+      "processes": [
+        "5-axis milling"
+      ],
+      "materials": [
+        "Aluminum 7075"
+      ],
+      "maxToleranceInches": 0.0008,
+      "maxLotSize": 400,
+      "iso9001Status": null,
+      "iso9001ValidFrom": null,
+      "iso9001ValidUntil": null,
+      "iso9001ScopeConfirmed": false,
+      "as9100Status": "review",
+      "as9100ValidFrom": "2026-01-01",
+      "as9100ValidUntil": "2027-10-01",
+      "as9100ScopeConfirmed": false,
+      "qualificationReviewer": null,
+      "siteId": "SITE-SUP-DEMO-004",
+      "siteReviewedAt": "2026-10-18T12:00:00Z",
+      "capabilitySourceId": "DEMO-CAP-SUP-DEMO-004",
+      "capabilitySourceLabel": "Synthetic supplier capability card",
+      "capabilitySourceObserved": "2026-10-18",
+      "iso9001SourceRef": null,
+      "iso9001SiteId": null,
+      "iso9001ReviewedAt": null,
+      "iso9001VerifiedBy": null,
+      "iso9001Observed": null,
+      "iso9001SourceLabel": null,
+      "iso9001Note": null,
+      "as9100SourceRef": "DEMO-CERT-SUP-DEMO-004-1",
+      "as9100SiteId": "SITE-SUP-DEMO-004",
+      "as9100ReviewedAt": "2026-10-18T12:00:00Z",
+      "as9100VerifiedBy": null,
+      "as9100Observed": "2026-10-18",
+      "as9100SourceLabel": "Synthetic certificate packet",
+      "as9100Note": "Fictional qualification evidence. No real certificate attached."
+    }
+  ],
+  "requests": [
+    {
+      "id": "REQ-UAS-BRACKET",
+      "part": "Camera mounting bracket",
+      "process": "CNC milling",
+      "material": "Aluminum 6061",
+      "maxToleranceInches": 0.001,
+      "quantity": 100,
+      "qualification": "ISO 9001:2015",
+      "usManufacturingRequired": true,
+      "customer": "Prairie Survey Robotics (fictional)",
+      "drawingRevision": "DEMO-A",
+      "revision": 1,
+      "dueDate": "2026-11-20",
+      "expectedReadySupplierIds": [
+        "SUP-DEMO-001"
+      ],
+      "expectedBestReadySupplierId": "SUP-DEMO-001",
+      "expectedComparisons": [
+        {
+          "supplierId": "SUP-DEMO-001",
+          "score": 100,
+          "blockers": [],
+          "ready": true
+        },
+        {
+          "supplierId": "SUP-DEMO-002",
+          "score": 65,
+          "blockers": [
+            "process"
+          ],
+          "ready": false
+        },
+        {
+          "supplierId": "SUP-DEMO-003",
+          "score": 55,
+          "blockers": [
+            "material",
+            "tolerance"
+          ],
+          "ready": false
+        },
+        {
+          "supplierId": "SUP-DEMO-004",
+          "score": 30,
+          "blockers": [
+            "process",
+            "material",
+            "qualification"
+          ],
+          "ready": false
+        }
+      ],
+      "packetSupplierId": "SUP-DEMO-001",
+      "expectedDecisionAction": "advance",
+      "expectedPacketStatus": "Approved for RFQ drafting"
+    },
+    {
+      "id": "REQ-UAS-STANDOFF",
+      "part": "Electronics stack standoffs",
+      "process": "CNC turning",
+      "material": "Aluminum 6061",
+      "maxToleranceInches": 0.001,
+      "quantity": 1600,
+      "qualification": "ISO 9001:2015",
+      "usManufacturingRequired": true,
+      "customer": "Prairie Survey Robotics (fictional)",
+      "drawingRevision": "DEMO-A",
+      "revision": 1,
+      "dueDate": "2026-11-20",
+      "expectedReadySupplierIds": [
+        "SUP-DEMO-002"
+      ],
+      "expectedBestReadySupplierId": "SUP-DEMO-002",
+      "expectedComparisons": [
+        {
+          "supplierId": "SUP-DEMO-001",
+          "score": 90,
+          "blockers": [
+            "quantity"
+          ],
+          "ready": false
+        },
+        {
+          "supplierId": "SUP-DEMO-002",
+          "score": 100,
+          "blockers": [],
+          "ready": true
+        },
+        {
+          "supplierId": "SUP-DEMO-003",
+          "score": 10,
+          "blockers": [
+            "process",
+            "material",
+            "tolerance",
+            "quantity"
+          ],
+          "ready": false
+        },
+        {
+          "supplierId": "SUP-DEMO-004",
+          "score": 20,
+          "blockers": [
+            "process",
+            "material",
+            "quantity",
+            "qualification"
+          ],
+          "ready": false
+        }
+      ],
+      "packetSupplierId": "SUP-DEMO-002",
+      "expectedDecisionAction": "advance",
+      "expectedPacketStatus": "Approved for RFQ drafting"
+    },
+    {
+      "id": "REQ-UAS-TRAY",
+      "part": "Electronics isolation tray",
+      "process": "CNC milling",
+      "material": "Acetal",
+      "maxToleranceInches": 0.003,
+      "quantity": 80,
+      "qualification": "ISO 9001:2015",
+      "usManufacturingRequired": true,
+      "customer": "Prairie Survey Robotics (fictional)",
+      "drawingRevision": "DEMO-A",
+      "revision": 1,
+      "dueDate": "2026-11-20",
+      "expectedReadySupplierIds": [
+        "SUP-DEMO-003"
+      ],
+      "expectedBestReadySupplierId": "SUP-DEMO-003",
+      "expectedComparisons": [
+        {
+          "supplierId": "SUP-DEMO-001",
+          "score": 75,
+          "blockers": [
+            "material"
+          ],
+          "ready": false
+        },
+        {
+          "supplierId": "SUP-DEMO-002",
+          "score": 40,
+          "blockers": [
+            "process",
+            "material"
+          ],
+          "ready": false
+        },
+        {
+          "supplierId": "SUP-DEMO-003",
+          "score": 100,
+          "blockers": [],
+          "ready": true
+        },
+        {
+          "supplierId": "SUP-DEMO-004",
+          "score": 30,
+          "blockers": [
+            "process",
+            "material",
+            "qualification"
+          ],
+          "ready": false
+        }
+      ],
+      "packetSupplierId": "SUP-DEMO-003",
+      "expectedDecisionAction": "advance",
+      "expectedPacketStatus": "Approved for RFQ drafting"
+    },
+    {
+      "id": "REQ-UAS-CLEVIS",
+      "part": "Landing-gear clevis",
+      "process": "5-axis milling",
+      "material": "Aluminum 7075",
+      "maxToleranceInches": 0.001,
+      "quantity": 200,
+      "qualification": "AS9100D",
+      "usManufacturingRequired": true,
+      "customer": "Prairie Survey Robotics (fictional)",
+      "drawingRevision": "DEMO-A",
+      "revision": 1,
+      "dueDate": "2026-11-20",
+      "expectedReadySupplierIds": [],
+      "expectedBestReadySupplierId": null,
+      "expectedComparisons": [
+        {
+          "supplierId": "SUP-DEMO-001",
+          "score": 30,
+          "blockers": [
+            "process",
+            "material",
+            "qualification"
+          ],
+          "ready": false
+        },
+        {
+          "supplierId": "SUP-DEMO-002",
+          "score": 90,
+          "blockers": [
+            "qualification"
+          ],
+          "ready": false
+        },
+        {
+          "supplierId": "SUP-DEMO-003",
+          "score": 10,
+          "blockers": [
+            "process",
+            "material",
+            "tolerance",
+            "qualification"
+          ],
+          "ready": false
+        },
+        {
+          "supplierId": "SUP-DEMO-004",
+          "score": 90,
+          "blockers": [
+            "qualification"
+          ],
+          "ready": false
+        }
+      ],
+      "packetSupplierId": "SUP-DEMO-002",
+      "expectedDecisionAction": "hold",
+      "expectedPacketStatus": "Review only — approval required"
+    }
+  ],
+  "intake": {
+    "text": "Manufacturer: Lone Oak Micro Manufacturing (fictional)\nLocation: Gainesville, Texas\nCountry: US\nProcesses: 5 axis CNC milling, CNC turning\nMaterials: 7075 aluminum, 6061 aluminum\nTolerance: 0.0005\nCapacity: 300\nSource: DEMO-CAPABILITY-CARD-501\nDescription: Fictional precision machining profile for a commercial drone component demo.",
+    "query": "Lone Oak Micro Manufacturing (fictional)",
+    "expectedFields": {
+      "name": "Lone Oak Micro Manufacturing (fictional)",
+      "city": "Gainesville",
+      "region": "Texas",
+      "country": "US",
+      "processes": "5-axis milling, CNC turning",
+      "materials": "Aluminum 7075, Aluminum 6061",
+      "tolerance": "0.0005",
+      "maxLotSize": "300",
+      "sourceRef": "DEMO-CAPABILITY-CARD-501",
+      "description": "Fictional precision machining profile for a commercial drone component demo."
+    },
+    "expectedRecordType": "self-reported",
+    "expectedEvidenceCount": 0,
+    "expectedSiteStatus": "self-reported",
+    "expectedClevisBlockers": [
+      "qualification",
+      "domestic"
+    ]
+  }
+}

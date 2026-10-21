@@ -2,7 +2,7 @@
 
 **Track:** Supplier Relationship Management
 
-**Release:** 0.5.0
+**Release:** 0.6.0
 **Tagline:** Make domestic manufacturing capability discoverable, then establish a traceable next step.
 
 ## Inspiration
@@ -22,6 +22,8 @@ The existing capability network remains available. Manufacturers can review dete
 Static HTML/CSS/JavaScript with no third-party packages, credentials or external APIs. Intake, search and RFQ exchange run locally. There is no external AI, URL scraping or PDF ingestion. A URL can be retained as a reference but is not fetched. All state stays in the visitor's browser; profiles are not shared across visitors or devices.
 
 ## Evidence and limits
+
+The release has 157 passing automated tests, a source-hashed reproducible benchmark with raw samples and 16 explicit synthetic supplier/request comparisons, validated workspace export/restore, and a manual comparison worksheet. Recorded core software batch medians are approximately 0.072 ms for one intake, 0.082 ms for all 16 comparisons and 0.446 ms for four supplier-review packets on the recorded machine. These exclude browser and human work; independent human trials remain n=0, and no time-savings claim is made. See the app's **Validation & results** card and [MEASUREMENT.md](validation/MEASUREMENT.md).
 
 All scored manufacturers, part specifications, RFQs, responses and qualification evidence are fictional. Official Muenster machining capability references are separate research context. No claim is made about real supplier participation, drone part production, current capacity, certification, adoption, airworthiness or domestic content of every input. Human reviews record demo assertions; the app does not independently authenticate certificates. Automated tests cover intake, search, existing review rules and RFQ workflow rules. Browser validation status is tracked in [RELEASE_EVIDENCE.md](RELEASE_EVIDENCE.md); do not describe browser usability or actual cross-device file transfer as verified unless that record or a separate test supports it.
 

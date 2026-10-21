@@ -1,5 +1,46 @@
 # Forgepath release evidence — October 21, 2026
 
+## Version 0.6.0 — MAT-14
+
+This release adds reproducible fixed-fixture software measurements, an explicitly untimed manual worksheet and independent human protocol, plus validated workspace recovery. Independent human trials remain **n=0**; MAT-14 retains those external acceptance steps.
+
+### Automated validation and independent review
+
+157 tests pass: 105 existing tests, 48 workspace/recovery cases and four benchmark cases. Syntax checks pass. A separate read-only reviewer reran the suite, audited raw measurement arrays and hashes, checked workbook formulas/provenance, and exercised 69 additional malformed-state and boundary probes. Corrupt saved bytes are preserved without a write; old schema-3 exports migrate; nested RFQ snapshots, responses and reviews validate atomically; historical qualification records remain historical while stale/expired approval stays blocked.
+
+The source ZIP extracts into a separate clean directory and passes tests, syntax checks and build without installing packages. All hosted relative HTML links resolve to packaged files. The hosted report uses an external stylesheet to comply with the app's strict CSP; the standalone source report retains its local stylesheet.
+
+The workbook has three sheets and 10 filterable tables with exact synthetic capability/site/certificate provenance. Its six human start/end and elapsed rows remain blank, and the completed timing count is zero. ArtifactTool recalculation, timing arithmetic boundary checks, formula error scan and seven rendered views passed. Native spreadsheet behavior on the presentation laptop remains untested.
+
+### Reproducible software measurement
+
+The recorded run at `2026-10-21T22:07:42.243Z` uses Node v24.19.0 on Linux x64, 100 warmups and 1,000 measured iterations per task. Source hash: `273cdd24bfb0b3e7fcab723b63a274ef75331be6222927bef9afe6d6f372a506`.
+
+| Core work per iteration | Median ms | p95 ms |
+| --- | ---: | ---: |
+| One card: extraction, onboarding and exact-name discovery | 0.0719 | 0.3123 |
+| All six gates across four requests × four suppliers | 0.0818 | 0.3078 |
+| Four named synthetic decisions and supplier-review HTML packet strings | 0.4461 | 1.0350 |
+
+Setup is timed separately. These are synchronous software batch latencies; browser interaction, rendering, downloads, disk/network work and human reading/typing are excluded. The RFQ response-event lifecycle is outside this benchmark. All 16 explicit comparison answers agree, including 3 ready and 13 blocked pairs, with zero false-ready or false-blocked results **on these fixtures only**. The expired clevis certificate blocks advancement. One self-reported intake card remains discoverable and unqualified. No general accuracy, human time saving or adoption claim follows.
+
+Raw samples, environment, exact source hashes, independent worksheet-style software reference and limitations are in `validation/`. `npm run benchmark` regenerates results from the current machine; retain originals if comparing. The footer card reads the recorded JSON rather than a target value. The manual comparison uses identical facts and outputs, allows ordinary spreadsheet features, hides the answer key until scoring and counterbalances order. Its packet task requires one bracket packet; the separate four-packet software batch is not a human trial.
+
+### Agent-driven browser checks
+
+- The prior 0.5.0 workspace loads with its complete RFQ history. Export returns a 35,429-byte JSON file through the browser download API.
+- Invalid pasted JSON reports an error and leaves replacement disabled. Valid exported JSON previews 4 manufacturers, 4 requirements, 1 RFQ, 3 responses, 2 response reviews and 5 qualification records without replacement. Both consent checks are required before explicit restore.
+- Restore preserves the RFQ history, held response review and stale approval from drawing revision 1 versus current revision 2.
+- At a 390px iframe (375px content), keyboard activation previews and confirms restore. Preview focuses its validation heading. The dialog measures 330px content/scroll width; the page measures 375px content/scroll width. This is an iframe check, not a physical mobile test.
+- The results link opens its disclosure and focuses the visible heading; its measured values match the final JSON run. A default anchor-focus conflict found during keyboard checks was fixed.
+- The workflow JSON download returns a 29,629-byte file; parsing confirms its RFQ snapshot, response, exceptions and timeline structure. The HTML control produces no app error, but its download event times out in this cloud browser; actual HTML transfer/open remains unverified. Earlier directly generated HTML bytes remain covered by tests.
+
+These are agent-driven software/browser checks. A second independent human, the actual presentation laptop, downloaded HTML open and local video fallback remain external checks in `validation/HUMAN_TEST.md`. No supported continuous recorder is exposed here. Video and authenticated Devpost submission remain MAT-11.
+
+### Recovery and ownership boundaries
+
+Restore validates size, record counts, bounded fields, IDs, references and history before replacing anything. Unreadable storage is downloadable unchanged, and automatic saves stay paused until explicit restore/reset. Read/quota failure leaves a persistent session-only export warning. Reset explicitly confirms replacement. Export/restore provides local portability, not shared persistence, authentication, cryptographic evidence or a tamper-resistant audit log. All records must remain fictional; use one active tab.
+
 ## Version 0.5.0 — MAT-12
 
 This release extends the approved RFQ path into a simulated supplier response, explicit exception handling, named buyer acknowledgement/hold and portable exchange records. MAT-13 discovery remains in place. MAT-14 measurement and MAT-15 pilot materials remain separate work.
