@@ -1,36 +1,41 @@
-# Forgepath — Supplier Desk
+# Forgepath Supplier Desk
 
 **Track:** Supplier Relationship Management
-
-**Release:** 0.6.0
-**Tagline:** Make domestic manufacturing capability discoverable, then establish a traceable next step.
+**Release:** 0.7.0
+**Tagline:** Connect American manufacturing capability to the next part that needs to be built.
 
 ## Inspiration
 
-A regional manufacturer may have the right machines and know-how while remaining difficult for an unfamiliar buyer to discover. A supplier list also leaves the buyer with unanswered questions about process fit, material, capacity and evidence. Forgepath demonstrates a short path from a component requirement to a named human decision and a reviewable supplier response.
+“I’m building a drone. Who can make this part?” A buyer needs more than a directory: the right machining process, material, tolerance, capacity and quality records. Meanwhile, capable American shops need an easier way to be found. Forgepath brings those two sides closer together, with evidence and a clear next step.
 
 ## What it does
 
-Buyers compare fictional suppliers against explicit requirements, review evidence and record a named decision before creating an immutable RFQ draft. A simulated supplier role in the same local browser can record an accept, decline or clarification with quantity in pcs, delivery date or calendar-day lead time, actor and source reference. The buyer can review visible exceptions and acknowledge the latest response or hold it for follow-up. A changed response version makes its earlier review stale and requires another named review.
+Follow Alex Morgan at Prairie Survey Robotics as the team sources 200 landing-gear clevises for its Scout inspection drone. Forgepath compares domestic shop profiles against the part requirements. Red River Toolworks looks promising, but the certificate copy on file is out of date. That raises a practical question: has certification lapsed, or has the shop renewed without updating this record?
 
-Versioned JSON/CSV exchange correlates responses to the RFQ, line and request revision; matching duplicate event IDs are idempotent, conflicting duplicates are rejected, and batch validation is atomic. The workflow exports as JSON or a readable HTML packet. These records are local simulation data: no messages, payments, ERP connection, shared real-time exchange, order, award or commercial commitment is created. An RFQ draft and response acknowledgement do not approve a purchase.
+The buyer records a focused follow-up. A quality reviewer checks renewal details against validity dates, scope and the manufacturing site. Named approval then allows an RFQ draft tied to that exact requirement. Supplier response records preserve delivery exceptions, and changed responses require fresh review. Revising the drawing invalidates the earlier approval. Readable and structured exports retain the context.
 
-The existing capability network remains available. Manufacturers can review deterministic extracted fields from pasted text, edit them and confirm a fictional profile. Buyers can search plain-language needs, inspect editable inferred filters and see why profiles appear. Discovery remains separate from qualification. See [DEMO_SCRIPT.md](DEMO_SCRIPT.md) for the primary recording procedure and the optional clevis evidence journey.
+Manufacturers can also paste their capabilities, correct the extracted fields and become searchable in the workspace. Discovery and qualification remain separate decisions.
 
-## How it works
+## How we built it
 
-Static HTML/CSS/JavaScript with no third-party packages, credentials or external APIs. Intake, search and RFQ exchange run locally. There is no external AI, URL scraping or PDF ingestion. A URL can be retained as a reference but is not fetched. All state stays in the visitor's browser; profiles are not shared across visitors or devices.
+Static HTML, CSS and JavaScript, with deterministic intake, editable search constraints, explicit qualification rules, versioned records, and browser-local storage. JSON/CSV response exchange checks correlated RFQ, line and revision identifiers. Export and restore preserve evidence and decision history.
 
-## Evidence and limits
+## What we learned
 
-The release has 157 passing automated tests, a source-hashed reproducible benchmark with raw samples and 16 explicit synthetic supplier/request comparisons, validated workspace export/restore, and a manual comparison worksheet. Recorded core software batch medians are approximately 0.072 ms for one intake, 0.082 ms for all 16 comparisons and 0.446 ms for four supplier-review packets on the recorded machine. These exclude browser and human work; independent human trials remain n=0, and no time-savings claim is made. See the app's **Validation & results** card and [MEASUREMENT.md](validation/MEASUREMENT.md).
+An expired document is not proof that certification has lapsed. A high capability score is not qualification. Approval needs to follow the exact evidence and drawing a person reviewed. These distinctions turn a supplier list into a useful sourcing workflow.
 
-All scored manufacturers, part specifications, RFQs, responses and qualification evidence are fictional. Official Muenster machining capability references are separate research context. No claim is made about real supplier participation, drone part production, current capacity, certification, adoption, airworthiness or domestic content of every input. Human reviews record demo assertions; the app does not independently authenticate certificates. Automated tests cover intake, search, existing review rules and RFQ workflow rules. Browser validation status is tracked in [RELEASE_EVIDENCE.md](RELEASE_EVIDENCE.md); do not describe browser usability or actual cross-device file transfer as verified unless that record or a separate test supports it.
+## What’s next
 
-## Submission fields
+Help more American ideas reach American factory floors. The direction is agent-to-agent coordination: buyer agents describing production needs, supplier agents representing available capabilities, and people approving qualifications and commitments. Connected agents, shared supplier records and supplier messaging are future work. The current prototype provides the discovery, review and portable-record foundation.
 
-- Live demo: https://forgepath-supplier-desk.txpaintbrush.chatgpt.site (use only after deployment is confirmed)
-- Public GitHub: https://github.com/paintbrushv/buildagentmake
-- Video: PENDING recording of [DEMO_SCRIPT.md](DEMO_SCRIPT.md)
-- TalentDB: Matthew Dickson profile saved October 18, 2026; any added team member must register separately
-- Demo Day: registration approved October 19, 2026; confirmed details are in the user's calendar
+## Evidence and scope
+
+The sample project uses illustrative companies, people, specifications and records. The working application is browser-local and sends no supplier messages or orders. It does not independently authenticate certificates. No commercial adoption, verified supplier eligibility or measured human time savings is claimed. The automated suite has 157 passing tests; independent human trials and actual presentation-laptop acceptance remain pending. See RELEASE_EVIDENCE.md for the scope of checks.
+
+## Submission links and remaining fields
+
+- Application: https://forgepath-supplier-desk.txpaintbrush.chatgpt.site
+- Source repository: https://github.com/paintbrushv/buildagentmake (confirm public access and final source revision before submission)
+- Video: pending the revised Mac capture and end-to-end review
+- TalentDB registration, Demo Day attendance approval and calendar entry: already complete
+- Final revised public entry and finished video: user approval required before submission

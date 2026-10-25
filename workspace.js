@@ -35,7 +35,7 @@ function boundedTree(value,depth=0) {
 function requirement(r,p) {
  object(r,p);for(const f of ['id','part','customer','process','material','qualification','drawingRevision','sourceId'])str(r[f],`${p}.${f}`,{max:500});
  // The existing fictional scenario family is retained through buyer edits.
- if(!/fictional/i.test(r.customer)&&!(/fictional/i.test(r.sourceNote??'')&&/^REQ-UAS-/.test(r.id)))fail(`${p} must identify a fictional request`);
+ if(!/fictional/i.test(r.customer)&&!(/fictional|sample project/i.test(r.sourceNote??'')&&/^REQ-UAS-/.test(r.id)))fail(`${p} must identify a fictional request`);
  for(const f of ['story','sourceNote'])str(r[f],`${p}.${f}`,{empty:true});
  integer(r.revision,`${p}.revision`);positive(r.maxToleranceInches,`${p}.maxToleranceInches`);integer(r.quantity,`${p}.quantity`);
  bool(r.usManufacturingRequired,`${p}.usManufacturingRequired`);date(r.dueDate,`${p}.dueDate`);date(r.captured,`${p}.captured`);texts(r.checks,`${p}.checks`);
