@@ -1,3 +1,9 @@
+## October 25: drone sourcing story (0.7.0)
+
+Start with a buyer sourcing 200 landing-gear clevises for a Scout inspection drone. Compare shop capabilities, distinguish an out-of-date certificate copy from a confirmed lapse, review a renewal, and approve the specific RFQ draft. Drawing changes require fresh review. Ordinary names and part references keep the walkthrough focused; one sample-project notice explains the illustrative records. See DEMO_SCRIPT.md for the complete buyer story and the future agent-to-agent direction.
+
+Existing browser workspaces are preserved. A fresh browser context uses the revised seed names and references. To replace saved records, first export anything you need, then explicitly choose Reset sample project.
+
 # Forgepath — Supplier Desk
 
 A browser-local Supplier Relationship Management demonstration for HackFW: MADE 2026. Forgepath connects a component requirement to supplier capability and evidence, then carries a human-approved RFQ draft through a simulated supplier response, exception review and versioned record.

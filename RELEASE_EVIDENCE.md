@@ -1,3 +1,17 @@
+# Forgepath release evidence — October 25, 2026
+
+## Version 0.7.0 — sourcing narrative and certificate clarity
+
+The buyer journey now follows Prairie Survey Robotics sourcing 200 Scout drone landing-gear clevises. Repeated demonstration labels were consolidated into a sample-project notice. Named buyer, supplier and quality-review roles, ordinary shop names, drawing references and certificate references replace presentation placeholders. Internal record IDs and provenance remain compatible with earlier exports.
+
+An out-of-date certificate copy explicitly means current certification status is unconfirmed. It still blocks approval. A follow-up asks whether renewal exists or certification has lapsed; loading renewal details leaves scope confirmation unchecked. A named reviewer must confirm the scope and site. Capability, qualification, named approval and stale-approval gates remain intact. A roadmap panel distinguishes working functions from future agent-to-agent connections.
+
+Validation: 157 automated tests and syntax checks pass. The fixed-fixture benchmark was rerun with updated display labels and provenance references; expected capability facts and all 16 comparison outcomes remain unchanged. See current validation/benchmark-results.json for source hash, timings and environment. The preexisting manual workbook retains the 0.6.0 labels and remains an untimed protocol, not a new human trial.
+
+Agent-driven browser validation passed: side-by-side comparison, disabled approval with an out-of-date certificate, open/resolved follow-up, explicit renewal scope confirmation, named approval, RFQ snapshot, late-delivery exception, acknowledgement retaining the exception, stale review after a new response, stale approval after drawing Rev B, new manufacturer extraction and immediate discovery. Workflow JSON downloaded successfully. The cloud browser timed out waiting for the HTML download event; actual HTML download/open remains a Mac acceptance check. These checks are not an independent human usability trial. The revised Mac capture preserves readable form pauses and repaired dropdown selectors. Audio cache, stale-script rejection, pacing, and an actual H.264/AAC mux/decode were checked offline using a test tone. These do not constitute a finished voiceover or continuous demonstration video. Actual laptop HTML opening, final audio/video review, and independent human testing remain pending.
+
+---
+
 # Forgepath release evidence — October 21, 2026
 
 ## Version 0.6.0 — MAT-14
