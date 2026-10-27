@@ -1,5 +1,7 @@
 # Reproducible measurement and pending human baseline
 
+**HackFW status: submitted; presentation materials ready for Friday, October 30, 2026.** See the [submitted entry](https://devpost.com/software/forgepath-supplier-desk), [public video](https://vimeo.com/1239320256) and [Demo Day plan](../DEMO_DAY.md). Submission completion does not change the unmeasured human-baseline status documented here.
+
 The checked-in results measure local deterministic core execution on synthetic data. They do not measure operator task completion, browser performance, spreadsheet time, supplier discovery on the web, or commercial adoption. Scenario eligibility is fixed at **2026-10-21**, regardless of the machine's current date.
 
 ## Reproduce the measured software work

@@ -1,5 +1,9 @@
 # Forgepath Supplier Desk
 
+**Status: SUBMITTED — ready for Friday, October 30, 2026.** Updated October 26 (Central).
+
+Devpost confirmed **“Project submitted!”** for submission **1264502**. Final public content and submission were approved, the HackFW Official Rules and Devpost Terms of Service were accepted, and the public Vimeo embed was verified playing. The entry remains editable until **October 30, 2026 at 11:00 a.m. Central (12:00 p.m. EDT)**.
+
 **Track:** Supplier Relationship Management
 **Release:** 0.7.0
 **Tagline:** Connect American manufacturing capability to the next part that needs to be built.
@@ -30,12 +34,15 @@ Help more American ideas reach American factory floors. The direction is agent-t
 
 ## Evidence and scope
 
-The sample project uses illustrative companies, people, specifications and records. The working application is browser-local and sends no supplier messages or orders. It does not independently authenticate certificates. No commercial adoption, verified supplier eligibility or measured human time savings is claimed. The automated suite has 157 passing tests; independent human trials and actual presentation-laptop acceptance remain pending. See RELEASE_EVIDENCE.md for the scope of checks.
+The sample project uses illustrative companies, people, specifications and records. The working application is browser-local and sends no supplier messages or orders. It does not independently authenticate certificates. No commercial adoption, verified supplier eligibility or measured human time savings is claimed. The automated suite has 157 passing tests; independent human trials and the remaining presentation-laptop checks are pending. The completed recording shows the readable HTML packet opening. See RELEASE_EVIDENCE.md for the scope of checks.
 
-## Submission links and remaining fields
+## Completed submission
 
-- Application: https://forgepath-supplier-desk.txpaintbrush.chatgpt.site
-- Source repository: https://github.com/paintbrushv/buildagentmake (confirm public access and final source revision before submission)
-- Video: pending the revised Mac capture and end-to-end review
-- TalentDB registration, Demo Day attendance approval and calendar entry: already complete
-- Final revised public entry and finished video: user approval required before submission
+- [x] Devpost: https://devpost.com/software/forgepath-supplier-desk — submitted to HackFW: MADE Challenge.
+- [x] Application: https://forgepath-supplier-desk.txpaintbrush.chatgpt.site/ — published release 0.7.0.
+- [x] Source: https://github.com/paintbrushv/buildagentmake — public; PR #1 merged at `c66e32e9663c3cadbf7dd661336cd27dbcb0fb91`.
+- [x] Video: https://vimeo.com/1239320256 — Public, 8:46, embedded playback verified; Vimeo Free, no paid trial started.
+- [x] Final public content, video publication and Devpost submission approved by the user.
+- [x] TalentDB registration, Demo Day attendance approval and calendar entry already complete per MAT-11; not repeated.
+
+See [DEMO_DAY.md](DEMO_DAY.md) for Friday's presentation plan. Submission completion does not claim that independent human trials or every physical-laptop check has been performed.

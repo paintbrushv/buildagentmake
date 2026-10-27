@@ -2,6 +2,8 @@
 
 Status: **pending actual human runs (n = 0)**. No completion times, usability savings or human benchmark results have been measured. Agent runs, automated checks, a prepared workbook and a video demonstration do not count as independent human tests.
 
+**HackFW submission is complete and the presentation materials are ready for Friday, October 30, 2026.** This future research protocol is separate from the [submitted entry](https://devpost.com/software/forgepath-supplier-desk). The [finished video](https://vimeo.com/1239320256) shows the readable HTML packet opening. See [DEMO_DAY.md](../DEMO_DAY.md) for the short presentation checklist; the remaining native-laptop and independent-human observations below are not marked complete.
+
 ## Materials and fixed conditions
 
 - Forgepath: https://forgepath-supplier-desk.txpaintbrush.chatgpt.site
@@ -51,12 +53,12 @@ Do not require a numeric matching score in the workbook. Readiness, reasons and 
 
 Report per-task times, errors, assistance and failures with actual sample size and order. Separate completed, unassisted tasks from incomplete/assisted ones. Summarize the observed sample only, with its learning and familiarity limits; do not extrapolate general productivity savings or fill empty rows with estimates. Timing arithmetic tests of the workbook are software checks, not human observations.
 
-## Remaining external steps before a presentation or results claim
+## Remaining laptop checks and future human-study steps
 
 1. On the actual presentation laptop, open the public URL above and check the complete workflow at that machine's normal display size. Cloud-browser verification does not establish laptop/browser/download behavior.
 2. Download [manual-baseline.xlsx](https://forgepath-supplier-desk.txpaintbrush.chatgpt.site/validation/manual-baseline.xlsx), open it in the intended spreadsheet application, confirm all three sheets and filter controls, and verify that a disposable start/end entry calculates seconds. Use a clean copy for the human run.
 3. On that laptop, export **Readable workflow packet** and **Workflow packet JSON** from the workflow. If the legacy review dialog is used, its labels are **Download readable packet** and **Download JSON**. Open the downloaded HTML in the presentation browser and the JSON in a text editor. Confirm request/supplier/decision/evidence/reviewer content and exact file locations; a download click alone does not prove a file opens correctly. Keep these post-task exports out of the participant's pre-task materials.
 4. Use **Export workspace** to save a recovery JSON. Test **Restore workspace** in a disposable browser state: paste the JSON, inspect the preview, give the explicit restore consent, and confirm the restored facts, review decisions and packet. Preserve the original presentation state until recovery succeeds.
 5. Use **Download source**. On a clean local machine with Node 20+ and Python 3, follow the downloaded project's README to install its declared dependencies, run its documented checks/build, start it, and open the resulting local URL. Confirm the fixture/card workflow and HTML/JSON exports there. Record actual command outcomes; source download availability alone does not prove a clean boot.
-6. Prepare and open a short local MP4 demonstration on the actual presentation laptop as the offline fallback. It should show intake/find, the four-request shortlist, the named bracket review and opening the HTML/JSON outputs. If no verified recording exists yet, record one before the presentation. Keep the workbook and readable packet locally accessible. Label playback as a recorded demonstration, never a live run or independent human test.
+6. Open the completed **8:46 Forgepath MP4** on the actual presentation laptop as the offline fallback, with the network disabled, and verify sound and playback. Its full drone-clevis workflow is already [published on Vimeo](https://vimeo.com/1239320256) and submitted; no replacement recording is needed. Offline playback on the presentation laptop remains unobserved. Keep the workbook and readable packet locally accessible if using them. Label playback as a recorded demonstration, never a live run or independent human test. The video is not a completed run of this three-task human protocol.
 7. Run the independent human protocol above in both orders, preserve original outputs/logs, score afterward, and replace the pending status only with observed results. This human step cannot be completed by agents or inferred from automated benchmark output.

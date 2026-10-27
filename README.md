@@ -1,14 +1,23 @@
+# Forgepath — Supplier Desk
+
+**Status: submitted to HackFW: MADE Challenge and ready for Demo Day on Friday, October 30, 2026.** Status updated October 26 (Central).
+
+- [Submitted Devpost entry](https://devpost.com/software/forgepath-supplier-desk)
+- [Public walkthrough video — 8:46, ElevenLabs Brian narration](https://vimeo.com/1239320256)
+- [Live Forgepath application](https://forgepath-supplier-desk.txpaintbrush.chatgpt.site/)
+- [Friday presentation plan and final laptop checks](DEMO_DAY.md)
+
+Devpost confirmed **“Project submitted!”** The public Vimeo player was verified playing inside the Devpost entry. Source is public and PR #1 is merged. Vimeo remains on the Free plan; no paid trial was started. Registration, Demo Day attendance approval and the calendar entry were already complete and were not repeated.
+
 ## October 25: drone sourcing story (0.7.0)
 
 Start with a buyer sourcing 200 landing-gear clevises for a Scout inspection drone. Compare shop capabilities, distinguish an out-of-date certificate copy from a confirmed lapse, review a renewal, and approve the specific RFQ draft. Drawing changes require fresh review. Ordinary names and part references keep the walkthrough focused; one sample-project notice explains the illustrative records. See DEMO_SCRIPT.md for the complete buyer story and the future agent-to-agent direction.
 
 Existing browser workspaces are preserved. A fresh browser context uses the revised seed names and references. To replace saved records, first export anything you need, then explicitly choose Reset sample project.
 
-# Forgepath — Supplier Desk
-
 A browser-local Supplier Relationship Management demonstration for HackFW: MADE 2026. Forgepath connects a component requirement to supplier capability and evidence, then carries a human-approved RFQ draft through a simulated supplier response, exception review and versioned record.
 
-**Release:** 0.6.0 · **Data:** fictional only · **Storage:** this browser · **Runtime:** static HTML/CSS/JavaScript, no third-party packages, external APIs or credentials.
+**Release:** 0.7.0 · **Data:** illustrative sample project · **Storage:** this browser · **Runtime:** static HTML/CSS/JavaScript, no third-party packages, external APIs or credentials.
 
 ## Run from a clean checkout
 
@@ -20,7 +29,7 @@ npm run build
 npm start
 ```
 
-Open http://127.0.0.1:4173. The app starts with four component requests and four fictional manufacturers. `Reset demo` restores those records. `Export workspace` saves the current dataset and activity log. The downloadable source bundle includes app modules, tests, documentation and build scripts. Source repository: https://github.com/paintbrushv/buildagentmake
+Open http://127.0.0.1:4173. The app starts with four component requests and four fictional manufacturers. `Reset sample project` restores those records. `Export workspace` saves the current dataset and activity log. The downloadable source bundle includes app modules, tests, documentation and build scripts. Source repository: https://github.com/paintbrushv/buildagentmake
 
 `Restore workspace` accepts a pasted workspace JSON export, validates the entire dataset and previews counts before explicit replacement. Only use fictional data. Invalid input leaves the current workspace intact. If a saved workspace is unreadable, Forgepath preserves the original bytes for download and pauses automatic saving until an explicit restore or reset. Storage failures keep a session in memory and show a persistent export warning. Keep an export before replacing records or clearing browser data.
 
@@ -60,7 +69,7 @@ A future real manufacturer network needs shared persistence, authentication, acc
 
 157 automated tests cover intake, buyer search, supplier review, RFQ response rules, workspace recovery and fixed benchmark correctness. Browser validation status is recorded separately in [RELEASE_EVIDENCE.md](RELEASE_EVIDENCE.md).
 
-The footer's **Validation & results** card links to reproducible core timings, raw results, a manual comparison workbook and the independent human test protocol. Run `npm run benchmark` to reproduce the software benchmark; it overwrites the recorded result and report with that machine's measurements. Core timings exclude browser interaction, network, file transfer and human work. Human trials are **n=0, pending**; no productivity or saved-hours claim follows from software latency. See [MEASUREMENT.md](validation/MEASUREMENT.md) and [HUMAN_TEST.md](validation/HUMAN_TEST.md). Verify actual packet file transfer and the offline fallback on the presentation laptop before Demo Day.
+The footer's **Validation & results** card links to reproducible core timings, raw results, a manual comparison workbook and the independent human test protocol. Run `npm run benchmark` to reproduce the software benchmark; it overwrites the recorded result and report with that machine's measurements. Core timings exclude browser interaction, network, file transfer and human work. Human trials are **n=0, pending**; no productivity or saved-hours claim follows from software latency. See [MEASUREMENT.md](validation/MEASUREMENT.md) and [HUMAN_TEST.md](validation/HUMAN_TEST.md). The completed recording visibly opens the readable HTML packet. Native JSON/workbook opening, offline app startup and offline MP4 playback on the presentation laptop remain unverified; the short [Friday checklist](DEMO_DAY.md) keeps those separate from the completed submission.
 
 ## Public local context
 

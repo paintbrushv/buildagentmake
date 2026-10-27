@@ -1,4 +1,23 @@
-# Forgepath release evidence — October 25, 2026
+# Forgepath release evidence — submitted and ready for Friday
+
+## Current submission status — October 26, 2026 (Central)
+
+**Submitted to HackFW: MADE Challenge. Presentation materials ready for Friday, October 30, 2026.**
+
+- Devpost: https://devpost.com/software/forgepath-supplier-desk — submission **1264502** confirmed with **“Project submitted!”** and **“SUBMITTED TO — HackFW: MADE Challenge.”**
+- Video: https://vimeo.com/1239320256 — uploaded, processed, Public and verified playing inside the Devpost embed (0–19 seconds). Vimeo remains on Free; no paid trial was started.
+- Application: https://forgepath-supplier-desk.txpaintbrush.chatgpt.site/ — release **0.7.0** published.
+- Source: https://github.com/paintbrushv/buildagentmake — public; unauthenticated access verified. PR #1 merged at `c66e32e9663c3cadbf7dd661336cd27dbcb0fb91`.
+- Final public content, video publication, HackFW rules/Devpost terms acceptance and submission were explicitly approved by the user and completed.
+- TalentDB registration, Demo Day attendance approval and the calendar entry were already complete per MAT-11 and were not repeated.
+
+The completed original MP4 is **8:46.44**, **1440 × 1000**, **25 fps**, **H.264/AAC**, **20,193,530 bytes**. Full decoding passed. A sampled visual review of 53 frames plus the full-resolution RFQ packet confirms the complete workflow and readable dialog holds. The downloaded readable HTML packet visibly opens at about **6:19–6:28**, resolving that previously missing recording evidence. The supplied video was not edited. SHA-256: `c90c2e67fc3dda02b1f4f1745793b68b7ef4880c4984a6c019ed2c5dc5e7447a`.
+
+Audio presence and levels were technically checked; automated word-for-word transcription and subjective voice-quality assessment were not completed. Final publication approval came from the user. Independent human trials remain **n=0**. Native JSON/workbook opening, clean offline app startup and offline MP4 playback on the presentation laptop remain unverified. These limits are not outstanding submission tasks; see [DEMO_DAY.md](DEMO_DAY.md) for the short presentation checklist.
+
+The release notes below retain the evidence available at each implementation stage. Earlier statements about missing video, source visibility or Devpost submission are historical and superseded by the completed status above. They do not replace the remaining human-study or physical-device checks.
+
+## October 25 implementation evidence
 
 ## Version 0.7.0 — sourcing narrative and certificate clarity
 
@@ -8,11 +27,11 @@ An out-of-date certificate copy explicitly means current certification status is
 
 Validation: 157 automated tests and syntax checks pass. The fixed-fixture benchmark was rerun with updated display labels and provenance references; expected capability facts and all 16 comparison outcomes remain unchanged. See current validation/benchmark-results.json for source hash, timings and environment. The preexisting manual workbook retains the 0.6.0 labels and remains an untimed protocol, not a new human trial.
 
-Agent-driven browser validation passed: side-by-side comparison, disabled approval with an out-of-date certificate, open/resolved follow-up, explicit renewal scope confirmation, named approval, RFQ snapshot, late-delivery exception, acknowledgement retaining the exception, stale review after a new response, stale approval after drawing Rev B, new manufacturer extraction and immediate discovery. Workflow JSON downloaded successfully. The cloud browser timed out waiting for the HTML download event; actual HTML download/open remains a Mac acceptance check. These checks are not an independent human usability trial. The revised Mac capture preserves readable form pauses and repaired dropdown selectors. Audio cache, stale-script rejection, pacing, and an actual H.264/AAC mux/decode were checked offline using a test tone. These do not constitute a finished voiceover or continuous demonstration video. Actual laptop HTML opening, final audio/video review, and independent human testing remain pending.
+Agent-driven browser validation passed: side-by-side comparison, disabled approval with an out-of-date certificate, open/resolved follow-up, explicit renewal scope confirmation, named approval, RFQ snapshot, late-delivery exception, acknowledgement retaining the exception, stale review after a new response, stale approval after drawing Rev B, new manufacturer extraction and immediate discovery. Workflow JSON downloaded successfully. The cloud browser originally timed out waiting for the HTML download event; the completed Mac recording subsequently showed the downloaded HTML packet opening. These checks are not an independent human usability trial. The Mac capture preserves readable form pauses and repaired dropdown selectors. Audio cache, stale-script rejection, pacing, and an actual H.264/AAC mux/decode were initially checked offline using a test tone. The completed Brian-narrated MP4, user approval, public hosting and submission are recorded above; independent human testing remains pending.
 
 ---
 
-# Forgepath release evidence — October 21, 2026
+## Historical release evidence — October 21, 2026
 
 ## Version 0.6.0 — MAT-14
 
@@ -135,10 +154,10 @@ Validated against the served static app:
 
 The app's data is browser-local and editable; it is not a production multi-user or tamper-proof system. Narrow viewport interaction has not been independently verified. No independent second human has yet run the clean checkout. No supported continuous video recorder is exposed here.
 
-## Release requirements still external
+## Historical 0.3.0 release handoff — now completed
 
-- Source repository: https://github.com/paintbrushv/buildagentmake — standalone demo source, documentation, tests and build scripts. Repository visibility is tracked in Linear.
-- Demo video: record the tested two-minute procedure in DEMO_SCRIPT.md on a machine with screen recording, then supply an accepted video link.
-- Devpost: authenticated final submission remains required; this source release does not establish a submitted project.
+- [x] Public source: https://github.com/paintbrushv/buildagentmake — current 0.7.0 implementation, documentation, tests and build scripts.
+- [x] Completed video: https://vimeo.com/1239320256 — the final full workflow runs 8:46, superseding the original two-minute recording plan.
+- [x] Devpost submission: https://devpost.com/software/forgepath-supplier-desk — successful submission confirmed after final user approval.
 
 Linear project: https://linear.app/matthewdickson/project/forgepath-american-manufacturing-readiness-demo-7c1aae223ad6
