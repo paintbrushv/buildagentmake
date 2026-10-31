@@ -1,13 +1,15 @@
 # Forgepath — Supplier Desk
 
-**Status: submitted to HackFW: MADE Challenge and ready for Demo Day on Friday, October 30, 2026.** Status updated October 26 (Central).
+**Status: presented at HackFW: MADE Challenge Demo Day on October 30, 2026.** Developed for the Supplier Relationship Management track. Status updated October 31, 2026 (Central).
+
+Forgepath demonstrates how manufacturing buyers can connect part requirements with supplier capabilities, review qualification evidence, approve traceable RFQ drafts, and manage versioned supplier responses. The current release is a working browser-local prototype using illustrative data. Production adoption, real-world supplier qualification, shared customer infrastructure and completed independent human trials have not been established.
 
 - [Submitted Devpost entry](https://devpost.com/software/forgepath-supplier-desk)
 - [Public walkthrough video — 8:46, ElevenLabs Brian narration](https://vimeo.com/1239320256)
 - [Live Forgepath application](https://forgepath-supplier-desk.txpaintbrush.chatgpt.site/)
-- [Friday presentation plan and final laptop checks](DEMO_DAY.md)
+- [Demo Day presentation plan and laptop checklist (historical)](DEMO_DAY.md)
 
-Devpost confirmed **“Project submitted!”** The public Vimeo player was verified playing inside the Devpost entry. Source is public and PR #1 is merged. Vimeo remains on the Free plan; no paid trial was started. Registration, Demo Day attendance approval and the calendar entry were already complete and were not repeated.
+The October 30 presentation marks completion of the Demo Day milestone. The submission video and presentation checklist remain available as historical materials. The prototype boundaries and validation limitations below still apply.
 
 ## October 25: drone sourcing story (0.7.0)
 
@@ -69,7 +71,7 @@ A future real manufacturer network needs shared persistence, authentication, acc
 
 157 automated tests cover intake, buyer search, supplier review, RFQ response rules, workspace recovery and fixed benchmark correctness. Browser validation status is recorded separately in [RELEASE_EVIDENCE.md](RELEASE_EVIDENCE.md).
 
-The footer's **Validation & results** card links to reproducible core timings, raw results, a manual comparison workbook and the independent human test protocol. Run `npm run benchmark` to reproduce the software benchmark; it overwrites the recorded result and report with that machine's measurements. Core timings exclude browser interaction, network, file transfer and human work. Human trials are **n=0, pending**; no productivity or saved-hours claim follows from software latency. See [MEASUREMENT.md](validation/MEASUREMENT.md) and [HUMAN_TEST.md](validation/HUMAN_TEST.md). The completed recording visibly opens the readable HTML packet. Native JSON/workbook opening, offline app startup and offline MP4 playback on the presentation laptop remain unverified; the short [Friday checklist](DEMO_DAY.md) keeps those separate from the completed submission.
+The footer's **Validation & results** card links to reproducible core timings, raw results, a manual comparison workbook and the independent human test protocol. Run `npm run benchmark` to reproduce the software benchmark; it overwrites the recorded result and report with that machine's measurements. Core timings exclude browser interaction, network, file transfer and human work. Human trials are **n=0, pending**; no productivity or saved-hours claim follows from software latency. See [MEASUREMENT.md](validation/MEASUREMENT.md) and [HUMAN_TEST.md](validation/HUMAN_TEST.md). The completed recording visibly opens the readable HTML packet. Native JSON/workbook opening, offline app startup and offline MP4 playback on the presentation laptop remain unverified; the historical [Demo Day checklist](DEMO_DAY.md) records those checks separately. Presentation at Demo Day does not establish that each check was completed.
 
 ## Public local context
 
